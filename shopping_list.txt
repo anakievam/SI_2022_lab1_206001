@@ -1,5 +1,5 @@
-bread
-juice
-chips
-cheese
-chocolate
+bread x 2
+juice x 3
+chips x 3
+cheese x 2
+chocolate x 4
