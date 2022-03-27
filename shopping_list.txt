@@ -1,5 +1,7 @@
 bread x 2
 juice x 2
 chips x 3
-cheese x 2
 chocolate x 3
+milk x 2
+chocolate x 4
+yogurt x 3
