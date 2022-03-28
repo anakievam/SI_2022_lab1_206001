@@ -1,0 +1,166 @@
+4. git clone https://github.com/anakievam/SI_2022_lab1_206001.git-од github се копира URL на remote репозиториум и со наредбата git clone 
+репозиториумот целосно се симннува локално
+5. git add shopping_list.txt - фајлот shopping_list.txt се додава на сцена со што е спремен да биде комитуван
+   git commit -m "Add 5 items to the shopping list" - се што е веќе додадено на сцената се комитува со специфираната порака
+6. git -a -m “Add quantities to the items” - истовремено се додава на сцена и се комитува
+7. git branch branch1 
+   git branch branch2 - се креираат нови гранки од гранката master
+
+8. git log за сите гранки ќе биде ист
+PS C:\Users\Marija Anakieva\a\SI_2022_lab1_206001> git log
+commit 84c239a427e03690244a2531354a3b703982de6f (HEAD -> branch2, master, branch1)
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:19:37 2022 +0200
+
+    Add quantities to the items
+
+commit f5e7fd17feb1e444da45aa74c8d2e90e489931b9
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:18:21 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 28818aab773d06fcb08ca339c2c8c1078692258c (origin/master, origin/HEAD)
+Author: anakievam <101275524+anakievam@users.noreply.github.com>
+Date:   Mon Mar 28 01:09:32 2022 +0200
+
+    Initial commit
+
+9. git push -u origin master
+   git push -u origin branch1
+   git push -u origin branch2 - сите гранки се синхронизираат со remote репозиториумот на github
+10.git checkout branch1 - префрлување на гранката branch1 
+
+17. PS C:\Users\Marija Anakieva\a\SI_2022_lab1_206001> git log
+commit 87742c5296b0963f51085a473ed2e5ee19603ff6 (HEAD -> master, origin/master, origin/HEAD)
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:27:40 2022 +0200
+
+    Change quantity of item #2
+
+commit 84c239a427e03690244a2531354a3b703982de6f (origin/branch2)
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:19:37 2022 +0200
+
+    Add quantities to the items
+
+commit f5e7fd17feb1e444da45aa74c8d2e90e489931b9
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:18:21 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 28818aab773d06fcb08ca339c2c8c1078692258c
+Author: anakievam <101275524+anakievam@users.noreply.github.com>
+Date:   Mon Mar 28 01:09:32 2022 +0200
+
+    Initial commit
+
+
+
+PS C:\Users\Marija Anakieva\a\SI_2022_lab1_206001> git log
+commit 41c6fdc3898f2c3b5d32105f5a12ff58a3f01834 (HEAD -> branch1, origin/branch1)
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:25:59 2022 +0200
+
+    Change quantity of item #5
+
+commit 84c239a427e03690244a2531354a3b703982de6f (origin/branch2)
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:19:37 2022 +0200
+
+    Add quantities to the items
+
+commit f5e7fd17feb1e444da45aa74c8d2e90e489931b9
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:18:21 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 28818aab773d06fcb08ca339c2c8c1078692258c
+Author: anakievam <101275524+anakievam@users.noreply.github.com>
+Date:   Mon Mar 28 01:09:32 2022 +0200
+
+    Initial commit
+ 
+
+
+
+
+PS C:\Users\Marija Anakieva\a\SI_2022_lab1_206001> git log
+commit 9e16568b830a3bae0d369a0038e4c27010c346d6 (HEAD -> branch2)
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:30:45 2022 +0200
+
+    Modify item #4
+
+commit 84c239a427e03690244a2531354a3b703982de6f (origin/branch2)
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:19:37 2022 +0200
+
+    Add quantities to the items
+
+commit f5e7fd17feb1e444da45aa74c8d2e90e489931b9
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:18:21 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 28818aab773d06fcb08ca339c2c8c1078692258c
+Author: anakievam <101275524+anakievam@users.noreply.github.com>
+Date:   Mon Mar 28 01:09:32 2022 +0200
+
+    Initial commit
+
+
+18. git reset HEAD^ - се бриша последниот комит а промените се враќаат на сцена за да се направат уште промени
+
+
+19. git log za branch2
+PS C:\Users\Marija Anakieva\a\SI_2022_lab1_206001> git log
+commit f8d16d77d5378418ca0dfab6870c857a82b50925 (HEAD -> branch2)
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:38:11 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 84c239a427e03690244a2531354a3b703982de6f (origin/branch2)
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:19:37 2022 +0200
+
+    Add quantities to the items
+
+commit f5e7fd17feb1e444da45aa74c8d2e90e489931b9
+Author: Marija <marija.anakieva@students.finki.ukim.mk>
+Date:   Mon Mar 28 01:18:21 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 28818aab773d06fcb08ca339c2c8c1078692258c
+Author: anakievam <101275524+anakievam@users.noreply.github.com>
+Date:   Mon Mar 28 01:09:32 2022 +0200
+
+    Initial commit
+
+
+20. PS C:\Users\Marija Anakieva\a\SI_2022_lab1_206001> git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Во спојувањето на гранките не се појави конфликт. Тоа беше направено по ort стратегија.
+
+21. PS C:\Users\Marija Anakieva\a\SI_2022_lab1_206001> git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\Marija Anakieva\a\SI_2022_lab1_206001> git merge branch2
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Во спојувањето на гранките се појави конфликт во shopping_list.txt по што го сменив фајлот така што и промените направени во master
+и промените направени во branch2 беа задржани. Спојувањето беше направено по рекурзивна стратегија.  
+
